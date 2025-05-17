@@ -64,3 +64,25 @@
      * Effects of blocking operations
      * Why concurrent handling is important
      * Basic thread manipulation in Rust
+
+5. Multithreaded server using Threadpool
+   - Implemented a thread pool to handle concurrent requests:
+     * Creates a fixed number of worker threads at startup
+     * Uses channels to communicate between threads
+     * Queues incoming requests and distributes to available workers
+     * Properly cleans up threads when server shuts down
+   - Key learning points:
+     * Thread pool architecture and implementation
+     * Thread synchronization using Arc and Mutex
+     * Message passing between threads with channels
+     * Proper resource cleanup with Drop trait
+   - The implementation demonstrates:
+     * How to manage multiple threads safely
+     * Concurrent request handling without race conditions
+     * Efficient reuse of threads
+     * Graceful shutdown of worker threads
+   - Benefits shown:
+     * Improved server performance under load
+     * Better resource utilization
+     * Controlled concurrency
+     * Prevention of thread explosion
