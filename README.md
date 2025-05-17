@@ -47,3 +47,20 @@
      * Make routing decisions
      * Return appropriate status codes
      * Serve different content based on request
+
+4. Simulation of slow request
+   - Implemented a simulated slow response path (/sleep):
+     * Uses thread::sleep to pause execution for 10 seconds
+     * Demonstrates blocking nature of single-threaded server
+     * Shows how one slow request affects all subsequent requests
+     * Highlights need for concurrent request handling
+   - Key learning points:
+     * Impact of blocking operations on server performance
+     * Limitations of single-threaded architecture
+     * Need for thread pools or async handling in production
+     * Trade-offs between simplicity and scalability
+   - The implementation shows:
+     * How to simulate network/processing delays
+     * Effects of blocking operations
+     * Why concurrent handling is important
+     * Basic thread manipulation in Rust
