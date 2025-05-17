@@ -15,6 +15,9 @@
      * Rust's error handling patterns
      * File I/O operations
 
+<img width="917" alt="image" src="https://github.com/user-attachments/assets/7edcc7a5-677f-43cd-9da9-87eb6620deda" />
+<img width="883" alt="image" src="https://github.com/user-attachments/assets/79492ffc-5146-4632-b2eb-236e974aebf8" />
+
 2. Reflection from the first step is that we can also implement http web server with rust
    - Rust's performance characteristics make it an excellent choice for web servers
    - The implementation demonstrates:
